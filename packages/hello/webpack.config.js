@@ -32,7 +32,10 @@ module.exports = {
     concatenateModules: false,
   },
   target: 'node',
-  externals: [nodeExternals()],
+  externals: [nodeExternals({
+    modulesDir: path.resolve(__dirname, '../../node_modules'),
+    allowlist: ['my-libs']
+  })],
   module: {
     rules: [
       // all files with a `.ts` or `.tsx` extension will be handled by `ts-loader`

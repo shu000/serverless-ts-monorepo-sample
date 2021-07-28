@@ -1,0 +1,10 @@
+{
+  "name": "my-libs",
+  "version": "1.0.0",
+  "private": true,
+  "main": "src/index.ts",
+  "dependencies": {
+    "@middy/core": "^1.5.2",
+    "@middy/http-json-body-parser": "^1.5.2"
+  }
+}

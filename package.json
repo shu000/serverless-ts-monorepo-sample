@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "workspaces": [
+    "packages/my-libs",
     "packages/bye",
     "packages/hello"
   ],
