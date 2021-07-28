@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file: .env
+    volumes:
+      - monorepo-sample-workspace:/workspace
+    command: sleep infinity
+
+volumes:
+  monorepo-sample-workspace:
+    driver: local
